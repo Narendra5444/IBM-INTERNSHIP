@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Organic Fruits Store</title>
+  <link rel="stylesheet" href="fruits.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <h1>Organic Fruits Store</h1>
+    <p>Fresh & Healthy, Straight from Farms</p>
+  </header>
+
+  <!-- Filters & Sorting -->
+  <section class="controls">
+    <div class="filter">
+      <h3>Filter</h3>
+      <label>
+        Category:
+        <select id="categoryFilter">
+          <option value="all">All</option>
+          <option value="apple">Apple</option>
+          <option value="banana">Banana</option>
+          <option value="citrus">Citrus</option>
+          <option value="berry">Berry</option>
+        </select>
+      </label>
+
+      <label>
+        Price Range:
+        <select id="priceFilter">
+          <option value="all">All</option>
+          <option value="0-50">Below ₹50</option>
+          <option value="50-100">₹50 - ₹100</option>
+          <option value="100-200">₹100 - ₹200</option>
+        </select>
+      </label>
+    </div>
+
+    <div class="sort">
+      <h3>Sort By</h3>
+      <select id="sortOptions">
+        <option value="default">Default</option>
+        <option value="priceLow">Price: Low → High</option>
+        <option value="priceHigh">Price: High → Low</option>
+        <option value="rating">Rating: High → Low</option>
+      </select>
+    </div>
+  </section>
+
+  <!-- Product Grid -->
+  <main class="product-grid" id="productGrid">
+    <!-- Products will be dynamically inserted via JS -->
+  </main>
+
+  <script src="fruits.js"></script>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Narendra Veer Reddy Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav">
+      <button class="nav-link" onclick="scrollToSection('home')">HOME</button>
+      <button class="nav-link" onclick="scrollToSection('about')">ABOUT</button>
+      <button class="nav-link" onclick="scrollToSection('projects')">PROJECTS</button>
+      <button class="nav-link" onclick="scrollToSection('contact')">CONTACT</button>
+      <button class="nav-burger" aria-label="Open menu" onclick="toggleMenu()">☰</button>
+    </nav>
+  </header>
+  <main>
+    <section id="home" class="section home reveal">
+      <div class="hero-card">
+        <div class="hero-left">
+          <h1 class="title">Narendra Veer<br/>Reddy</h1>
+          <p class="subtitle">ApexPlanet_internship</p>
+
+          <p class="handle">veerreddy.5444@gmail.com</p>
+
+          <div class="socials">
+            <a href="#" aria-label="Instagram" class="social">
+              <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7zm5 3.5A5.5 5.5 0 1 1 6.5 13 5.5 5.5 0 0 1 12 7.5zm0 2A3.5 3.5 0 1 0 15.5 13 3.5 3.5 0 0 0 12 9.5zm6.75-3.25a1.25 1.25 0 1 1-1.25 1.25A1.25 1.25 0 0 1 18.75 6.25z"/></svg>
+            </a>
+            <a href="#" aria-label="GitHub" class="social">
+              <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path d="M12 .5a12 12 0 0 0-3.79 23.39c.6.11.82-.26.82-.58v-2.02c-3.34.73-4.04-1.61-4.04-1.61-.55-1.41-1.34-1.79-1.34-1.79-1.09-.75.08-.74.08-.74 1.21.09 1.85 1.24 1.85 1.24 1.07 1.83 2.81 1.3 3.5.99.11-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.92 0-1.31.47-2.39 1.24-3.24-.12-.3-.54-1.52.12-3.17 0 0 1.01-.32 3.3 1.24a11.4 11.4 0 0 1 6 0c2.28-1.56 3.29-1.24 3.29-1.24.66 1.65.24 2.87.12 3.17.77.85 1.24 1.93 1.24 3.24 0 4.6-2.8 5.61-5.47 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.82.58A12 12 0 0 0 12 .5z"/></svg>
+            </a>
+            <a href="#" aria-label="Twitter" class="social">
+              <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path d="M23 4.8a9.4 9.4 0 0 1-2.7.75A4.7 4.7 0 0 0 22.4 3a9.46 9.46 0 0 1-3 1.15A4.72 4.72 0 0 0 11.5 8a13.4 13.4 0 0 1-9.7-4.9 4.72 4.72 0 0 0 1.46 6.3 4.66 4.66 0 0 1-2.14-.6v.06a4.72 4.72 0 0 0 3.79 4.63 4.7 4.7 0 0 1-2.13.08 4.73 4.73 0 0 0 4.41 3.28A9.46 9.46 0 0 1 1 19.54 13.35 13.35 0 0 0 8.23 21.7c9.14 0 14.14-7.72 13.84-14.64A9.86 9.86 0 0 0 23 4.8z"/></svg>
+            </a>
+            <a href="#" aria-label="LinkedIn" class="social">
+              <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1-.02 5 2.5 2.5 0 0 1 .02-5zM3 8.98h3.96V21H3zM9.5 8.98h3.8v1.64h.05c.53-1 1.84-2.05 3.79-2.05 4.06 0 4.81 2.67 4.81 6.14V21H18V15.9c0-1.22-.02-2.79-1.7-2.79-1.7 0-1.96 1.32-1.96 2.69V21H10V8.98z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-right">
+          <img src="narendra.jpeg" alt="Profile photo" class="hero-img" />
+        </div>
+      </div>
+    </section>
+    <section id="about" class="section reveal">
+      <div class="section-card">
+        <br>
+        <br>
+        <br>
+        <h2>About</h2>
+        <p>
+          I am currently pursuing my B.E. in Computer Science and Engineering (CSE) at Sathyabama University, where I am in my 3rd year of study. As a passionate learner, I am continuously exploring various areas of computer science, enhancing my technical knowledge, and working towards building a strong foundation for my future career in technology.
+        </p>
+        <br>
+        <br>
+        <br>
+      </div>
+    </section>
+     <section id="projects" class="section reveal">
+      <div class="section-card">
+        <h2>Projects</h2>
+        <ul class="project-list">
+          <li class="project" onclick="openProject('formindex.html')">TASK 1 - FORM FILLING</li>
+          <li class="project" onclick="openProject('taskindex.html')">TASK 2 - TODO LIST</li>
+          <li class="project" onclick="openProject('quizindex.html')">TASK 3 - QUIZ GAME</li>
+          <li class="project" onclick="openProject('fruits.html')">TASK 4 - ORGANIC FRUIT STORE</li>
+          <li class="project" onclick="openProject('menswearindex.html')">TASK 5 - MENS WEAR</li>
+        </ul>
+      </div>
+    </section>
+    <section id="contact" class="section reveal">
+      <div class="section-card">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:veerreddy.5444@gmail.com">veerreddy.5444@gmail.com</a></p>
+        <form class="contact-form" onsubmit="return handleContact(event)">
+          <input type="text" name="name" placeholder="Your name" required />
+          <input type="email" name="email" placeholder="Your email" required />
+          <textarea name="message" placeholder="Message" rows="4" required></textarea>
+          <button type="submit">Send</button>
+          <p class="form-note" id="formNote" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

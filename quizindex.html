@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>QuizGlide</title>
+  <link rel="stylesheet" href="quizstyle.css" />
+</head>
+<body>
+  <header>
+    <h1>QuizGame</h1>
+    <p>LEARN & ANSWER</p>
+  </header>
+
+  <main>
+    <section id="quiz-container">
+      <div id="quiz-box" class="modern-quiz">
+        <div id="question-box">
+          <h2 id="question-title">Your question goes here:</h2>
+        </div>
+
+        <div id="options-container" class="options-grid"></div>
+
+        <button id="next-btn" onclick="nextQuestion()">Next</button>
+      </div>
+      <p id="score-display"></p>
+    </section>
+
+    <section id="end-screen" style="display:none;">
+      <h2 class="glow">🎉 Quiz Completed!</h2>
+      <p id="final-score"></p>
+      <div class="end-buttons">
+        <button class="big-btn" onclick="startNewQuiz()">Start New Quiz</button>
+        <button class="big-btn" onclick="viewHistory()">View Previous Results</button>
+      </div>
+    </section>
+
+    <section id="history-section" style="display:none;">
+      <h3 class="glow">📜 Previous Quiz Results</h3>
+      <ul id="history-list"></ul>
+      <button class="big-btn" onclick="clearHistory()">Clear History</button>
+    </section>
+  </main>
+
+  <footer>Designed by Narendra Veer Reddy</footer>
+
+  <script src="quizscript.js"></script>
+</body>
+</html>
